@@ -1,0 +1,229 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #231955;
+}
+.container {
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+/*--------------------------------------- navigation starts here--------------------------------------- */
+.logo {
+  color: white;
+  font-size: x-large;
+  line-height: 70px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  width: 50%;
+}
+a {
+  font-weight: 500;
+  font-family: "poppins";
+  text-decoration: none;
+  color: white;
+}
+/*--------------------------------------- navigation ends here--------------------------------------- */
+h3 {
+  text-align: center;
+  padding-top: 8vh;
+}
+/*--------------------------------------- banner starts here--------------------------------------- */
+.banner {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  background-color: #231955;
+}
+.bannerleft {
+  width: 70%;
+  height: 90vh;
+}
+.bannerright {
+  border-radius: 30px;
+  margin-top: 10vh;
+  height: 58vh;
+  width: 28%;
+  background-color: white;
+  margin-right: 150px;
+}
+
+.login,
+.pass,.repass{
+  margin: auto;
+  margin-top: 20px;
+  display: inline-block;
+}
+.submit {
+  margin: auto;
+  margin-top: 20px;
+}
+.user {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding-left: 5px;
+  height: 30px;
+  width: 300px;
+  padding-top: 5px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.submit-button {
+  background-color: #8976ee;
+  color: white;
+  font-family: "poppins";
+  font-weight: 600;
+  height: 40px;
+  width: 200px;
+  /* padding-left: 200px; */
+}
+.submit input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.login-submit {
+  text-align: center;
+  padding-top: 20px;
+}
+.for {
+  color: #0096ff;
+  font-size: 13px;
+}
+.forgot {
+  width: 300px;
+  margin: auto;
+  margin-top: 5px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  font-family: "poppins";
+  color: #231955;
+  text-align: center;
+  font-size: 23px;
+}
+h2 {
+  font-family: "poppins";
+  font-size: 15px;
+  color: #231955;
+  text-align: center;
+  font-weight: 300;
+}
+.check {
+  height: 12px;
+  width: 12px;
+  margin-right: 2px;
+}
+.checkname {
+  color: #0096ff;
+}
+.register {
+  margin-left: 65px;
+  margin-top: 30px;
+}
+.registerlink {
+  color: #0096ff;
+  font-size: 13px;
+  margin-left: 5px;
+}
+.allrights,
+.rgukt {
+  color: white;
+}
+.allrights {
+  margin-left: 60px;
+}
+.rgukt {
+  margin-right: 60px;
+}
+/*--------------------------------------- footer starts here--------------------------------------- */
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-image {
+  height: 50vh;
+  width: 50%;
+  margin-top: 15vh;
+  background-image: url("images/bannerleft.png");
+  background-size: cover;
+  background-position: center;
+  margin-left: 200px;
+}
+img {
+  height: 60vh;
+  width: 50%;
+}
+/*--------------------------------------- footer ends here--------------------------------------- */
+/*--------------------------------------- banner ends here--------------------------------------- */
+form i {
+  margin-left: -30px;
+  cursor: pointer;
+}
+.password {
+  margin-left: -15px;
+}
+
+/* -----------------------------------responsive------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    background-color: #231955;
+  }
+  .bannerleft {
+    width: 0%;
+    height: 0px;
+  }
+  .bannerright {
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 5vh;
+    height: 58vh;
+    width: 100%;
+    background-color: white;
+    margin-right: 150px;
+  }
+  .register {
+    margin-left: 65px;
+    margin-top: 20px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+    justify-content: space-between;
+  }
+.allrights {
+  margin-left: 10px;
+  font-family: 'poppins';
+  margin-bottom: 5px;
+}
+.rgukt {
+  font-family: 'poppins';
+  margin-right: 10px;
+}
+}
