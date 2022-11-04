@@ -5,9 +5,7 @@ $password = "";
 $dbname = "hci_assignment";
 $conn = mysqli_connect($server,$username,$password,$dbname);
 session_start();
-
-
-if($_POST['submit']){
+if(isset($_POST['submit'])){
     $email = $_POST['username'];
     $password = $_POST['password'];
     $passwordConfirm = $_POST['repassword'];

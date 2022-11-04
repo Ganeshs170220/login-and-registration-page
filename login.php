@@ -14,7 +14,7 @@ $username = "root";
 $password = "";
 $dbname = "hci_assignment";
 $conn = mysqli_connect($server,$username,$password,$dbname);
-session_start(); 
+
 if (isset($_POST['username']) && isset($_POST['password'])) {
     function validate($data){
        $data = trim($data);
@@ -22,6 +22,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
        $data = htmlspecialchars($data);
        return $data;
     }
+    session_start(); 
     $username = validate($_POST['username']);
     $password = validate($_POST['password']);
     if (empty($username)) {
