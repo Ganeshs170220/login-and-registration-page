@@ -57,7 +57,8 @@ h3 {
 }
 
 .login,
-.pass,.repass{
+.pass,
+.repass {
   margin: auto;
   margin-top: 20px;
   display: inline-block;
@@ -78,6 +79,12 @@ input {
   border: 1px solid gray;
   border-radius: 5px;
 }
+nav{
+  line-height: 70px;
+}
+ul li{
+  list-style-type: none;
+}
 .submit-button {
   background-color: #8976ee;
   color: white;
@@ -85,6 +92,7 @@ input {
   font-weight: 600;
   height: 40px;
   width: 200px;
+  cursor: pointer;
   /* padding-left: 200px; */
 }
 .submit input {
@@ -178,7 +186,6 @@ form i {
 }
 
 /* -----------------------------------responsive------------------------------------------------- */
-
 @media screen and (max-width: 768px) {
   .container {
     width: 90%;
@@ -217,13 +224,14 @@ form i {
     align-items: center;
     justify-content: space-between;
   }
-.allrights {
-  margin-left: 10px;
-  font-family: 'poppins';
-  margin-bottom: 5px;
+  .allrights {
+    margin-left: 10px;
+    font-family: "poppins";
+    margin-bottom: 5px;
+  }
+  .rgukt {
+    font-family: "poppins";
+    margin-right: 10px;
+  }
 }
-.rgukt {
-  font-family: 'poppins';
-  margin-right: 10px;
-}
-}
+

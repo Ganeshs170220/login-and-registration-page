@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 01, 2022 at 06:40 AM
+-- Generation Time: Nov 08, 2022 at 07:16 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -39,9 +39,8 @@ CREATE TABLE `registration` (
 --
 
 INSERT INTO `registration` (`id`, `username`, `password`, `repassword`) VALUES
-(1, 's170220@rguktsklm.ac.in', 'ganesh@123', 'ganesh@123'),
-(2, 's170264@rguktsklm.ac.in', 'jagan@123', 'jagan@123'),
-(3, 's170268@rguktsklm.ac.in', 'prudhvi@123', 'prudhvi@123');
+(1, 's170220@rguktsklm.ac.in', 'Ganesh@123', 'Ganesh@123'),
+(2, 's170320@rguktsklm.ac.in', 'Srinivas@123', 'Srinivas@123');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +60,7 @@ ALTER TABLE `registration`
 -- AUTO_INCREMENT for table `registration`
 --
 ALTER TABLE `registration`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -55,6 +55,7 @@ if(isset($_SESSION['loginerror'])){
         <!--------------------------------------- navigation bar ends here--------------------- -->
       </header>
     </div>
+   
     <!--------------------------------------- banner starts here--------------------- -->
     <div class="banner">
       <div class="bannerleft">

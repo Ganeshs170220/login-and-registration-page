@@ -12,6 +12,14 @@ if(isset($_SESSION['registrationsuccess'])){
   echo "<script>alert('Registration successful')</script>";
   unset($_SESSION['registrationsuccess']);
 }
+if(isset($_SESSION['mismatched'])){
+  echo "<script>alert('Both passwords are mismatched')</script>";
+  unset($_SESSION['mismatched']);
+}
+if(isset($_SESSION['passwordnot'])){
+  echo "<script>alert('Password should be at least 8 characters in length and should include at least one upper case letter, one number, and one special character.')</script>";
+  unset($_SESSION['passwordnot']);
+}
 
 ?>
 
@@ -63,7 +71,7 @@ if(isset($_SESSION['registrationsuccess'])){
           </div>
           <div class="pass">
             <input
-              class="password"
+              class="password pr-password"
               type="password"
               name="password"
               id="password"
@@ -109,6 +117,7 @@ if(isset($_SESSION['registrationsuccess'])){
     <!---------------------------------------footer ends here--------------------- -->
     <!--------------------------------------- banner ends here--------------------- -->
     <script src="script.js"></script>
+
    
   </body>
 </html>
